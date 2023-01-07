@@ -1,0 +1,38 @@
+#include<iostream>
+
+using namespace std;
+
+int maximum(int a , int b , int c , int d )
+{
+    if ((a>b) && (a>c) && (a>d)) {
+        return a ;
+    
+    }
+    else if((b>a) && (b>c) && (b>d))
+    {
+        return b;
+    }
+    else if((c>a) && (c>b) && (c>d))
+    {
+        return c;
+    }
+    else if((d>a) && (d>b) && (d>c) )
+    {
+        return d;
+    }
+    return 0;
+    
+}
+
+int main()
+{
+    int x, y , z , w ;
+    scanf("%d\n" , &x);
+    scanf("%d\n" , &y);
+    scanf("%d\n" , &z);
+    scanf("%d\n" , &w);
+    
+    cout<<maximum(x , y , z , w)<<endl;
+    
+    
+}
