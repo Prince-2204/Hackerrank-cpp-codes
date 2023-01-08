@@ -1,0 +1,40 @@
+#include<iostream>
+
+using namespace std;
+
+int sum(int a , int b)
+{
+   int c= a+b;
+
+   return c;
+
+}
+
+int sub(int a , int b)
+{
+    int d = a - b ;
+    if (d>0)
+    {
+        return d;
+    }
+    else
+    {
+        int e = -1*(d) ;
+        return e;
+
+    }
+    
+    
+}
+
+int main()
+{
+  int  x;
+  int y ;
+  scanf("%d\n" , &x);
+  scanf("%d" , &y);
+  cout<<sum(x , y)<<endl;
+  cout<<sub(x , y );
+
+
+}
