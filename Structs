@@ -1,0 +1,21 @@
+#include<iostream>
+
+using namespace std ;
+
+typedef struct file{
+    
+    int age ;
+    char first_name[100] ;
+    char last_name[100];
+    int standard ;
+    
+}ep;
+
+int main(){
+    ep id ;
+    cin>>id.age;
+    cin>>id.first_name;
+    cin>>id.last_name;
+    cin>>id.standard;
+    cout<<id.age<<" "<<id.first_name<<" "<<id.last_name<<" "<<id.standard;
+}
