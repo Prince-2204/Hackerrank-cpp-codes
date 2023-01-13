@@ -1,0 +1,42 @@
+#include<iostream>
+
+using namespace std ;
+
+class employee 
+{
+  int age ;
+  char first_name[100];
+  char last_name[100];
+   int stdandard ;
+   
+   public:
+   void setdata();
+   void getdata(); 
+};
+
+void employee :: setdata()
+{
+    cin>>age;
+    cin>>first_name;
+    cin>>last_name;
+    cin>>stdandard;
+    
+}
+
+void employee :: getdata()
+{
+    cout<<age<<endl;
+    cout<<last_name<<","<<" "<<first_name<<endl;
+    cout<<stdandard<<endl;
+    cout<<endl;
+    cout<<age<<","<<first_name<<","<<last_name<<","<<stdandard;
+    
+}
+
+
+int main()
+{
+    employee id ;
+    id.setdata();
+    id.getdata();
+}
