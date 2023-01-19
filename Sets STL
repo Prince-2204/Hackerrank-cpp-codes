@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+
+using namespace std ;
+
+int main(){
+    set<string> s ;
+    int q;
+    cin>>q;
+    while (q--) {
+        int type ;
+        cin>>type;
+        if (type == 1) {
+            
+            string name ;
+            cin>>name;
+            s.insert(name);
+        
+        }
+        else if (type == 2)
+        {
+            string name;
+            cin>>name;
+            auto it = s.find(name);
+            if(it != s.end())
+            {
+                s.erase(it);
+            }
+        }
+        else if(type == 3)
+        {
+            string name;
+            cin>>name;
+            auto it = s.find(name);
+            if(it != s.end())
+            {
+                cout<<"Yes\n";
+            }
+            else {
+                cout<<"No\n";
+            }
+        }
+    
+    }
+    
+}
