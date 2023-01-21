@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+
+using namespace std ;
+int main()
+{
+    map<string , int> m ;
+    int n ;
+    cin>>n ;
+    while (n--) {
+        int type ;
+        cin>>type;
+        if (type == 1) {
+            string name ;
+            int marks ;
+            cin>>name>>marks;
+            if (m.find(name) != m.end()) {
+                
+                m[name] = m[name] + marks;
+            
+            }else{
+                m.insert({name , marks});
+            }
+            
+        }else if(type == 2){
+            string name ;
+            cin>>name;
+            m[name] = 0 ;
+        }else if (type == 3){
+            string name ;
+            cin>>name ;
+            cout<<m[name]<<endl;
+        }
+    
+    }
+    
+}
